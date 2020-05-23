@@ -6,6 +6,7 @@
     "background_color": "#121920",
     "theme_color": "#7aaac9",
     "dir": "rtl",
+    "start_url": "/index.html",
     "display": "standalone",
     "orientation": "portrait"
 }
