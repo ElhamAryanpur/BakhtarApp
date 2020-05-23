@@ -1,7 +1,6 @@
 <script>
+  export let Data;
   export let changeSubject = () => {};
-
-  let Data = ["history", "Geography", "Math"];
 </script>
 
 <style>
@@ -9,6 +8,17 @@
     position: relative;
     top: 20%;
     left: 10px;
+  }
+
+  button{
+    background: #121920;
+    border: 0px solid #6AAAC9;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  button:hover{
+    background: #18232e;
   }
 </style>
 

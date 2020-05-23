@@ -5,13 +5,14 @@
   function setSize(element: object) {
     element.setAttribute(
       "style",
-      `width: ${window.innerWidth}px; height: ${window.innerHeight + 70}px`
+      `width: ${window.innerWidth - 40}px; height: ${window.innerHeight}px`
     );
   }
 </script>
 
 <style>
-  textarea {
+  div {
+    overflow-y: auto;
     border: 0px;
     resize: none;
     height: 100vh;
@@ -20,4 +21,9 @@
   }
 </style>
 
-<textarea dir="rtl" use:setSize readonly>{data[choosen]}</textarea>
+<div dir="rtl" use:setSize>
+
+<h2>{data[choosen].title}</h2>
+
+{data[choosen].data}
+</div>

@@ -1,0 +1,11 @@
+{
+    "short_name": "Bakhtar",
+    "name": "Bakhtar",
+    "lang": "fa",
+    "description": "Bakhtar's app",
+    "background_color": "#121920",
+    "theme_color": "#7aaac9",
+    "dir": "rtl",
+    "display": "standalone",
+    "orientation": "portrait"
+}
