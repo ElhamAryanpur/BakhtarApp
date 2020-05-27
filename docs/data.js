@@ -29,7 +29,7 @@ function httpGetAsync(theUrl, callback) {
 }
 
 window.downloadData = function () {
-    this.httpGetAsync("/data.xml", function (data) {
+    this.httpGetAsync("https://raw.githubusercontent.com/ElhamAryanpur/BakhtarApp/master/docs/data.xml", function (data) {
         const x2js = new X2JS();
         localStorage.setItem("data", JSON.stringify(x2js.xml_str2json(data).content.subject));
         location.reload();
