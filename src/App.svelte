@@ -18,6 +18,12 @@
   window.addEventListener("resize", () => {
     window.location.reload();
   });
+
+  if (navigator.serviceWorker) {
+    navigator.serviceWorker.register("/BakhtarApp/sw.js", {
+      scope: "/BakhtarApp/"
+    });
+  }
 </script>
 
 <style>
