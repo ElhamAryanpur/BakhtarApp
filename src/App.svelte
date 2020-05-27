@@ -1,7 +1,6 @@
 <script>
   import Menu from "./comp/menu.svelte";
   import Display from "./comp/display.svelte";
-  import { MakeOffline } from "./offline.svelte";
 
   let choosen = 0;
 
@@ -19,8 +18,6 @@
   window.addEventListener("resize", () => {
     window.location.reload();
   });
-
-  MakeOffline();
 </script>
 
 <style>

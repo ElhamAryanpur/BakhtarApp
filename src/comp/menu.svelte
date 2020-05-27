@@ -23,6 +23,9 @@
 </style>
 
 <table>
+  <tr>
+    <button on:click={()=> window.downloadData()}>Download</button>
+  </tr>
   {#each Data as menu, n}
     <tr>
       <button on:click={()=> changeSubject(n)}>{menu}</button>
